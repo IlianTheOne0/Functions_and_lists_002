@@ -3,7 +3,7 @@ def main():
         a = int(input('Enter the first number: '))
         b = int(input('Enter the second number: '))
 
-        print(is_even(a, b))
+        print(f'All even numbers in the range {a} and {b}: {is_even(a, b)}')
     except Exception as e:
         print(f'Error: {e}')
 
