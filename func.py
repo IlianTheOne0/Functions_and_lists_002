@@ -8,7 +8,13 @@ def main():
             print(f'Error: {e}')
             continue
 
+    a, b = is_the_biggest_check(a, b)
+
     print(f'All even numbers in the range {a} and {b}: {is_even(a, b)}')
+
+def is_the_biggest_check(a, b):
+    a, b = (b, a) if a > b else (a, b)
+    return a, b
 
 def is_even(a, b):
     result = str()
