@@ -1,5 +1,8 @@
 def main():
-    print('The lowest number is:', search_for_the_least(split(input('Enter numbers, separated by a space: '), ' ')))
+    try:
+        print('The lowest number is:', search_for_the_least(split(input('Enter numbers, separated by a space: '), ' ')))
+    except Exception as e:
+        print(f'Error: {e}')
 
 def split(numbers, pattern):
     for number in pattern:
